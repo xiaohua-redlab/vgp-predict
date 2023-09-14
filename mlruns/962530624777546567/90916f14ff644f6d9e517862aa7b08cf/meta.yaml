@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/_mlops/vgp_predict_lab/vgp-predict/mlruns/962530624777546567/90916f14ff644f6d9e517862aa7b08cf/artifacts
+end_time: 1694073431584
+entry_point_name: ''
+experiment_id: '962530624777546567'
+lifecycle_stage: active
+run_id: 90916f14ff644f6d9e517862aa7b08cf
+run_name: linear_regression
+run_uuid: 90916f14ff644f6d9e517862aa7b08cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694073425816
+status: 3
+tags: []
+user_id: redlab

@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1694018312920
+current_stage: Staging
+description: ''
+last_updated_timestamp: 1694356335076
+name: linear_regression_model
+run_id: 18c18eb28a0643cd99941d37aa8a93b4
+run_link: ''
+source: file:///C:/_mlops/vgp_predict_lab/vgp-predict/mlruns/962530624777546567/18c18eb28a0643cd99941d37aa8a93b4/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 3
