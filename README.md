@@ -138,37 +138,44 @@ Just test it run well by running:
 
 5. For the training part in the notebook, for now it's simple, but you should apply a 5_fold_CrossValidation_train to train and evalue a model. 
 
-### 5-Fold Cross-Validation
-- Introduction
-5-Fold Cross-Validation (CV) is a widely used technique in machine learning to assess the performance of a predictive model. It helps to evaluate how well a model generalizes to unseen data and provides a more robust estimate of its performance compared to a single train-test split.
+    ### 5-Fold Cross-Validation
+    - Introduction
 
-Here's a step-by-step guide on how to perform 5-fold cross-validation for training and evaluating a machine learning model:
+       5-Fold Cross-Validation (CV) is a widely used technique in machine learning to assess the performance of a predictive model. It helps to evaluate how well a model generalizes to unseen data and provides a more robust estimate of its performance compared to a single train-test split.
 
-- Data Preparation:
+    Here's a step-by-step guide on how to perform 5-fold cross-validation for training and evaluating a machine learning model:
 
-Ensure your dataset is properly preprocessed and divided into features (X) and target labels (y).
+    - Data Preparation:
 
-- Initialize the Model:
+        Ensure your dataset is properly preprocessed and divided into features (X) and target labels (y).
 
-Choose a machine learning algorithm or model that you want to evaluate.
+    - Initialize the Model:
 
-- Cross-Validation Split:
+        Choose a machine learning algorithm or model that you want to evaluate.
 
-Divide your dataset into five approximately equal-sized subsets or "folds." Each fold represents a separate training and testing set.
+    - Cross-Validation Split:
 
-- Iteration:
-Perform the following steps for each of the five folds:
-Use four folds for training the model.
-Use the remaining one fold for testing (validation).
-Train the model on the training folds.
-Evaluate the model's performance on the validation fold using a chosen evaluation metric (e.g., accuracy, mean squared error, etc.).
+        Divide your dataset into five approximately equal-sized subsets or "folds." Each fold represents a separate training and testing set.
 
-- Aggregation:
+    - Iteration:
 
-Calculate the average performance metric (e.g., mean accuracy or mean squared error) across all five folds. This gives you a more stable and reliable estimate of the model's performance.
+       Perform the following steps for each of the five folds:
 
-- Example Code:
-Here's an example python code snippet in Python using scikit-learn to perform 5-fold cross-validation:
+            Use four folds for training the model.
+
+            Use the remaining one fold for testing (validation).
+
+            Train the model on the training folds.
+
+       Evaluate the model's performance on the validation fold using a chosen evaluation metric (e.g., accuracy, mean squared error, etc.).
+
+    - Aggregation:
+
+        Calculate the average performance metric (e.g., mean accuracy or mean squared error) across all five folds. This gives you a more stable and reliable estimate of the model's performance.
+
+    - Example Code:
+
+      Here's an example python code snippet in Python using scikit-learn to perform 5-fold cross-validation:
 
 ```python
 from sklearn.model_selection import cross_val_score, KFold
