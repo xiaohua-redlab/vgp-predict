@@ -177,29 +177,29 @@ Just test it run well by running:
 
       Here's an example python code snippet in Python using scikit-learn to perform 5-fold cross-validation:
 
-```python
-from sklearn.model_selection import cross_val_score, KFold
-from sklearn.ensemble import RandomForestClassifier
-
-# Initialize your model
-model = RandomForestClassifier()
-
-# Specify the number of folds
-n_folds = 5
-
-# Create a cross-validation object (KFold)
-kf = KFold(n_splits=n_folds, shuffle=True, random_state=42)
-
-# Perform 5-fold cross-validation and specify the scoring metric (e.g., accuracy)
-scores = cross_val_score(model, X, y, cv=kf, scoring='accuracy')
-
-# Calculate the mean and standard deviation of the scores
-mean_accuracy = scores.mean()
-std_accuracy = scores.std()
-
-print(f'Mean Accuracy: {mean_accuracy}')
-print(f'Standard Deviation: {std_accuracy}')
-```
+        ```python
+        from sklearn.model_selection import cross_val_score, KFold
+        from sklearn.ensemble import RandomForestClassifier
+        
+        # Initialize your model
+        model = RandomForestClassifier()
+        
+        # Specify the number of folds
+        n_folds = 5
+        
+        # Create a cross-validation object (KFold)
+        kf = KFold(n_splits=n_folds, shuffle=True, random_state=42)
+        
+        # Perform 5-fold cross-validation and specify the scoring metric (e.g., accuracy)
+        scores = cross_val_score(model, X, y, cv=kf, scoring='accuracy')
+        
+        # Calculate the mean and standard deviation of the scores
+        mean_accuracy = scores.mean()
+        std_accuracy = scores.std()
+        
+        print(f'Mean Accuracy: {mean_accuracy}')
+        print(f'Standard Deviation: {std_accuracy}')
+        ```
 
 ## Some indications for Model Selection Part
 In this part, there is no prepared notebook, but here are some suggestions.
