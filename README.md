@@ -61,6 +61,8 @@ Project Organization
 
 This README provides instructions on how to set up the necessary conda environment for this project. The conda environment file (`environment.yml`) contains all the dependencies required to run the project.
 
+You will find the data in /data/external or /data/processed and the noebooks in /notebooks.
+
 ## Prerequisites
 
 Before you proceed with setting up the environment, make sure you have the following prerequisites installed:
