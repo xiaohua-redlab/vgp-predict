@@ -121,16 +121,20 @@ This is the notebook where we transform the processed data and train the model. 
 
 1. Make sure that MLFlow is installed in your system (it will be automatically installed if you create the conda environment using the provided `environment.yml` or `requirements.txt` file). 
 Just test it run well by running:
+
 `mlflow ui --default-artifact-root=file:mlruns` 
+
 P.S. you can add `--backend-store-uri=sqlite:///mlflow.db` in the above command to setup a remote backend-store (recommanded for collaborating)
+
 You should  have a message like: Serving on http://127.0.0.1:5000 and you can open the server.
 
-2. Make sure that the processed data is saved at `./data/processed/filtered_data_city1.csv` (e.g.)
+3. Make sure that the processed data is saved at `./data/processed/filtered_data_city1.csv` (e.g.)
 
-3. To launch MLFlow, you should set up some config, like: artifacts_dir, experiment_name, run_name, registered_model_name, remote_server_uri(e.g. http://127.0.0.1:5000).
+4. To launch MLFlow, you should set up some config, like: artifacts_dir, experiment_name, run_name, registered_model_name, remote_server_uri(e.g. http://127.0.0.1:5000).
+
 You can change them as you like, otherwise they are already setted in the code.
 
-4. For the training part in the notebook, for now it's simple, but you should apply a 5_fold_CrossValidation_train to train and evalue a model. 
+5. For the training part in the notebook, for now it's simple, but you should apply a 5_fold_CrossValidation_train to train and evalue a model. 
 
 ### 5-Fold Cross-Validation
 - Introduction
