@@ -105,8 +105,11 @@ VGP_HOST, VGP_USER, VGP_PWD, VGP_PORT (you can always add other variables) and t
 This is the notebook where we load and and first process the data from VGP dataset. At the end, we save the data for later use (training phase).
 
 1. Make sure that all environmental variables are setted. And read carefully the code comments lines in the notebook.(that will help you understand the code and intention)
+
 In this project, all the data should be saved at `/vgp-predict/data`.
+
 For raw data : `/vgp-predict/data/external`
+
 For processed data : `/vgp-predict/data/process`
 
 2. Change to your path
