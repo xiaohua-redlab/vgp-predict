@@ -72,10 +72,12 @@ Before you proceed with setting up the environment, make sure you have the follo
 Follow the steps below to create and activate the conda environment:
 
 1. Clone the repository (if you haven't already):
-`git clone https://github.com/xiaohua-redlab/vgp-predict`
-`cd your-repo`
+```bash
+git clone https://github.com/xiaohua-redlab/vgp-predict
+cd your-repo
+```
 
-2. Create the conda environment using the provided `environment.yml` file:
+3. Create the conda environment using the provided `environment.yml` file:
 `conda env create -f environment.yml`
 This will create a new conda environment with all the required packages.
 
@@ -97,7 +99,7 @@ Then running the following command:
 `conda env update -f environment.yml --prune`
 
 In this project, we need set up the environmental variables for VGP dataset, like: 
-VGP_HOST, VGP_USER, VGP_PWD, VGP_PORT already seted (you can always add other variables)
+VGP_HOST, VGP_USER, VGP_PWD, VGP_PORT (you can always add other variables) and these variables are already in `environment.yml` file.
 
 ## Some indications for `scratch_data_process.ipynb`
 This is the notebook where we load and and first process the data from VGP dataset. At the end, we save the data for later use (training phase).
